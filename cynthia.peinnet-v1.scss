@@ -1,0 +1,91 @@
+$macouleur : rgb(211, 13, 115);
+$couleurfond : #ededed ;
+@keyframes monanim{
+    from {
+transform: translateX(-50px);
+color:red;
+}
+to {
+transform: translateY(0);
+color:navy;
+}
+
+}
+h1{
+    animation: monanim 4s 1;
+    font-family: 'Segoe UI', sans-serif; text-align:left;
+}
+
+
+ul{
+    list-style-type: none; text-align: center;
+}
+#listequalite li:before{
+    content:"♥ "; color : $macouleur;
+}
+#listequalite li{
+    font-size: 25px;
+}
+
+#listeexp li:before{
+    content :"★ "; color: rgb(242, 208, 38);
+}
+#listediplome li::before{
+    content :"✓ "; color: rgb(7, 209, 7);
+}
+
+header{
+    background: $couleurfond; padding: 2%; text-align: center;
+}
+
+#moncv{
+    font-family: 'Times New Roman', serif; font-size: 50px; text-align: center;
+}
+
+img{
+    border: 5px solid black;
+}
+
+p{
+    text-align: center; font-size: 17px;
+}
+
+h3{
+    text-align: center;
+}
+
+footer{
+    background-color: $couleurfond; padding: 2%;
+}
+
+#date{
+    text-align: right;
+}
+
+#adresse{
+    text-align: left;
+}
+
+#info{
+    text-align: right;
+}
+
+a:link{
+    color:rgb(239, 9, 116);
+}
+
+a:visited{
+    color:black;
+}
+
+table{
+    table-layout: fixed; 
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black; padding: 15px;
+} 
+th,td {
+    border: 1px solid black;
+    padding: 15px;
+    text-align: center;
+}
